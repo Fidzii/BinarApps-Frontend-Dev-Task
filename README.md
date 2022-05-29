@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Chmura słów
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis działania
 
-## Available Scripts
+Gra składa się z 3 widoków:
 
-In the project directory, you can run:
+- strona logowania
+- rozgrywka
+- strona końcowa
 
-### `npm start`
+Po wpisaniu swojego nick'u użytkownik poprzez przycisk **play** przechodzi do widoku samej rozgrywki.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Zadaniem jest wybrać odpowiednie słowa z listy, kliknięcie lewym przyciskiem myszki wybiera słowa, ponownym kliknięciem można je odznaczyć.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Aby sprawdzić poprawność odpowiedzi należy kliknąć przycisk **check answers**. Za każde dobrze wybrane słowo użytkownik otrzymuje 2 punkty, za każde złe traci oraz dobre niezaznaczone traci punkt.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Opis projektu
 
-### `npm run build`
+demo aplikacji można zobaczyć na stronie: https://binar-apps-frontend-dev-task.vercel.app/start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Wykorzystane biblioteki:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React.js
+- TypeScript
+- React router v6
+- Sass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Uruchomienie aplikacji lokalnie
 
-### `npm run eject`
+- sklonowanie repozytorium
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+git clone https://github.com/Fidzii/BinarApps-Frontend-Dev-Task.git .
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- z poziomiu katalogu głównego aplikacji - zainstalowanie wymaganych bibliotek
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm i
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- uruchomienie środowiska developerskiego wraz z serwerem
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
