@@ -1,0 +1,16 @@
+.boxContainer {
+  border: 2px solid #2d2d2d;
+  border-radius: 3px;
+  padding: 3rem;
+  width: 70%;
+  height: 60%;
+
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+
+  :nth-child(2n + 2) {
+    transform: translateX(2rem) translateY(-1rem);
+  }
+}

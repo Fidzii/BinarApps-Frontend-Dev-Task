@@ -1,0 +1,46 @@
+.box {
+  color: #2d2d2d;
+  font-weight: 600;
+  position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  justify-self: center;
+
+  &.selected {
+    color: #868686;
+  }
+
+  &.good,
+  &.bad {
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  &.good {
+    color: #5fb951;
+
+    &::after {
+      content: "Good";
+      color: #32a405;
+    }
+  }
+
+  &.bad {
+    color: #e43023;
+
+    &::after {
+      content: "Bad";
+      color: #e47c74;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
